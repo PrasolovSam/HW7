@@ -11,6 +11,8 @@ public class Main {
         System.out.println("Введите ингредиент Пельмени");
         int dumplingsCount = new Scanner(System.in).nextInt();         //Пельмени(а почему, собственно нет? xD )
 
+        boolean isCanCook = false;
+
         //Рецепты Эликсиров:
         // 1. 3 Жабьих глаза + 1 кость ворона - Эликсир зоркости
         // 2. 2 кости ворона + 4 пельменя - Эликсир стойкости
@@ -28,6 +30,9 @@ public class Main {
         }
         if (ghoulTearsCount >= 5 && dumplingsCount >= 10 && toadEyesCount >= 4 && ravenBonesCount >= 3){
             System.out.println("Вы можете приготовить запретный эликсир");
+        }
+        if (isCanCook == false){
+            System.out.println("Вы не можете ничего приготовить");
         }
     }
 }
